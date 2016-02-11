@@ -2,7 +2,7 @@
 forward json POST api calls from IFTTT to your Known site
 
 ## IFTT
-- create a new IFTTT recipe 
+- create a new IFTTT recipe : if ... then Maker (Make a Web request)
 - url : url to this script
 - method : POST
 - contentType: json
