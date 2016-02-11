@@ -13,7 +13,7 @@ $request = (json_decode($foo, true));
                 $secret = json_decode(file_get_contents('secret.json'),TRUE);
         }
 if (!empty($request['key']) && !empty($request['id'])){
-        $known['action']="/status/edit";
+        $known['action']= (!empty($request['action']) ? $request['action'] : "/status/edit";
         $known['username'] = "YOUR_KNOWN_USER";
         $known['secret'] = $secret;
         $known['status'] = json_encode(array("body"=>$request['body']));
